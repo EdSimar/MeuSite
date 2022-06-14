@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body{
+    background-image: radial-gradient(circle, #0E1826 -80%, #0D0D0D);
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+/*estilização cabeçalho*/
+
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: rgb(18, 18, 29);
+    width: 100%;
+    height: 5%;
+    overflow: hidden;
+}
+
+#cabecalho{
+    width: 100%;
+    list-style: none;
+}
+
+#cabecalho ul{
+    margin-top: 5px;
+    list-style: none;
+}
+
+#cabecalho ul li{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#cabecalho ul li a{
+    text-decoration: none;
+    padding: 20px;
+}
+
+#cabecalho ul li a:hover{
+    color: rgb(201, 85, 8);
+    transition: 1s;
+}
+
+/*estilização página inicial*/
+
+#inicio{
+    margin: 105px auto 105px auto;
+}
+
+h1{
+    font-size: 30px;
+    text-align: center;
+    color: rgb(201, 85, 8);
+}
+
+#apresentacao{
+    font-size: 20px;
+    text-align: center;
+}
+
+#imagem1{
+    display: block;
+    margin: 0 auto 100px auto;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+}
+
+/*estilização aba Sobre mim*/
+
+#sobre{
+    border: 1px solid rgb(201, 85, 8);
+    width: 50%;
+    height: 20%;
+    text-align: justify;
+    padding: 10px 30px 30px 30px;
+    margin: 80px auto 50px auto;
+}
+
+h3{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#slider{
+    margin: 30px auto 50px auto;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#slides{
+    width: 500px;
+    height: 300px;
+    display: flex;
+}
+
+#slides input{
+    display: none;
+}
+
+.slide{
+    width: 100%;
+    position: relative;
+}
+
+.slide img{
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.navegacao-manual{
+    position: absolute;
+    width: 500px;
+    margin-top: -35px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-nav{
+    border: 2px solid rgb(18, 18, 29);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.manual-nav:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-nav:hover{
+    background-color: rgb(18, 18, 18);
+}
+
+#rad-circ0:checked ~ .first{
+    margin-left: 0;
+}
+
+#rad-circ1:checked ~ .first{
+    margin-left: -100%;
+}
+
+#rad-circ2:checked ~ .first{
+    margin-left: -200%;
+}
+
+#rad-circ3:checked ~ .first{
+    margin-left: -300%;
+}
+
+#rad-circ4:checked ~ .first{
+    margin-left: -400%;
+}
+
+#rad-circ5:checked ~ .first{
+    margin-left: -500%;
+}
+
+#rad-circ6:checked ~ .first{
+    margin-left: -600%;
+}
+
+#rad-circ7:checked ~ .first{
+    margin-left: -700%;
+}
+
+#rad-circ8:checked ~ .first{
+    margin-left: -800%;
+}
+
+#rad-circ9:checked ~ .first{
+    margin-left: -900%;
+}
+
+.navegacao-auto{
+    position: absolute;
+    width: 500px;
+    margin-top: 265px;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao-auto div{
+    border: 2px solid rgb(18, 18, 29);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navegacao-auto div:not(:last-child){
+    margin-right: 10px;
+}
+
+#rad-circ0:checked ~ .navegacao-auto .auto-nav0{
+    background-color: rgb(18, 18, 29);
+}
+
+#rad-circ1:checked ~ .navegacao-auto .auto-nav1{
+    background-color: rgb(18, 18, 29);
+}
+
+#rad-circ2:checked ~ .navegacao-auto .auto-nav2{
+    background-color: rgb(18, 18, 29);
+}
+
+#rad-circ3:checked ~ .navegacao-auto .auto-nav3{
+    background-color: rgb(18, 18, 29);
+}
+
+#rad-circ4:checked ~ .navegacao-auto .auto-nav4{
+    background-color: rgb(18, 18, 29);
+}
+
+#rad-circ5:checked ~ .navegacao-auto .auto-nav5{
+    background-color: rgb(18, 18, 29);
+}
+
+#rad-circ6:checked ~ .navegacao-auto .auto-nav6{
+    background-color: rgb(18, 18, 29);
+}
+
+#rad-circ7:checked ~ .navegacao-auto .auto-nav7{
+    background-color: rgb(18, 18, 29);
+}
+
+#rad-circ8:checked ~ .navegacao-auto .auto-nav8{
+    background-color: rgb(18, 18, 29);
+}
+
+#rad-circ9:checked ~ .navegacao-auto .auto-nav9{
+    background-color: rgb(18, 18, 29);
+}
+
+details{
+    margin: 0px 30px 0px 30px;
+    padding: 3px;
+}
+
+details:last-child{
+    margin-bottom: 50px;
+}
+
+.tit{
+    color: rgb(201, 85, 8);
+    font-weight: bold;
+}
+
+details:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.parag{
+    text-align: justify;
+    padding: 7px 20px 10px 20px;
+}
+
+
+/*estilização aba contato*/
+
+fieldset{
+    border: 1px solid rgb(201, 85, 8);
+    width: 40%;
+    margin: 4% auto;
+}
+
+form{
+    margin: 6%;
+}
+
+.formulario{
+    display: block;
+}
+
+label{
+    margin-bottom: 1%;
+}
+
+.caixa{
+    color: black;
+    margin-bottom: 10px;
+    width: 70%;
+    height: 20px;
+}
+
+textarea{
+    color: black;
+    width: 96%;
+    height: 70px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+.btn{
+    border: 1px solid rgb(201, 85, 8);
+    background-color: #0D0D0D;
+    color: rgb(201, 85, 8);
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+}
+
+.btn:hover{
+    background-color: rgb(201, 85, 8);
+    color: #0D0D0D;
+    transition: 0.4s;
+}
+
+#centroBt{
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+/*estilização footer*/
+
+footer{
+    background-color: rgb(235, 236, 255);
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rodape{
+    color: black;
+    margin: 15px 10px auto 15px;
+}
+
+#linkedin{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    margin: 1px 10px 0 0;
+}
+
+
+/*responsividade*/
+
+@media screen and (max-width: 1064px){
+fieldset{
+    width: 90%;
+    margin: 10% auto;
+}
+
+form{
+    margin: 5%;
+}
+
+label{
+    margin-bottom: 1%;
+}
+
+.caixa{
+    width: 85%;
+    height: 20px;
+}
+
+
+textarea{
+    width: 96%;
+    height: 70px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+}
